@@ -1,0 +1,55 @@
+{
+    "name": "train-horn/craft-sound-level",
+    "description": "Twig helpers for Craft CMS 5 that estimate sound level at distance (inverse-square law, optional air absorption) and render an accessible table.",
+    "type": "craft-plugin",
+    "keywords": ["craft", "craftcms", "craft-plugin", "twig", "decibel", "sound level", "spl", "inverse square law", "acoustics", "train horn"],
+    "homepage": "https://train-horn.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Train Horn",
+            "homepage": "https://train-horn.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/train-horn/craft-sound-level/issues",
+        "source": "https://github.com/train-horn/craft-sound-level",
+        "docs": "https://github.com/train-horn/craft-sound-level"
+    },
+    "require": {
+        "php": "^8.2",
+        "craftcms/cms": "^5.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0 || ^12.0",
+        "twig/twig": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "trainhorn\\soundlevel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "trainhorn\\soundlevel\\tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "handle": "sound-level",
+        "name": "Sound Level",
+        "developer": "Train Horn",
+        "developerUrl": "https://train-horn.com/",
+        "documentationUrl": "https://github.com/train-horn/craft-sound-level",
+        "class": "trainhorn\\soundlevel\\Plugin"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "craftcms/plugin-installer": true,
+            "yiisoft/yii2-composer": true
+        }
+    }
+}
